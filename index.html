@@ -2,11 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rusty O. Amalla Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -15,72 +17,109 @@
       <nav class="nav" id="nav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
       </nav>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
-      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      <div class="theme-toggle"><i class="fas fa-moon"></i></div>
     </div>
   </header>
 
-  <section id="home" class="section about">
-    <img src="profile.jpg" alt="Rusty O. Amalla" class="profile-pic">
-    <h2>Welcome!</h2>
-    <p>Hello, I’m <strong>Rusty O. Amalla</strong>, a passionate and aspiring developer. Welcome to my personal portfolio website!</p>
+  <section id="home" class="section" data-aos="fade-up">
+    <img src="pics/rus.jpg" alt="Rusty O. Amalla" class="profile-pic">
+    <h2>Hello, I'm Rusty!</h2>
+    <p>I am an aspiring developer fueled by a passion for innovation, creativity, and continuous learning. With every project, I strive to grow, explore new ideas, and push the boundaries of what I can do. This portfolio is a reflection of my journey a space where skills, experience, and ambition come together. Dive in, explore my work, and join me as I build a future shaped by technology, purpose, and passion."</p>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section" data-aos="fade-up">
     <div class="container">
       <h2>About Me</h2>
-      <p>I am a dedicated individual with a strong interest in technology, design, and community service. I enjoy learning new things and sharing what I learn with others.</p>
+      <p>My name is Rusty O. Amalla, and I am from Barangay South Daang Hari, Purok 10 Extension, Taguig City. I am currently studying at STI College Alabang, pursuing a Bachelor of Science in Information Technology (BSIT), where I continue to nurture my passion for technology, innovation, and personal growth.
+I graduated from Moreh Academy, where I specialized in Information and Communications Technology (ICT). During my senior high school years, I was an active student leader and consistently recognized as an honor student. These experiences taught me the value of leadership, discipline, and teamwork qualities that I carry with me in everything I do.
+I am a hardworking, committed, and passionate individual with a strong interest in technology, design, and community service. I enjoy learning new things and sharing knowledge with others. Whether it’s enhancing my technical skills, volunteering in my community, or supporting fellow youth, I am always motivated by a desire to grow and make a meaningful impact.
+I firmly believe in continuous self-improvement. I embrace every challenge as an opportunity to learn and expand my abilities. My ultimate goal is to build a fulfilling career where I can apply my talents, contribute to society, and inspire others through my dedication and journey.
+
+</p>
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="skills" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Bash</div>
+        <div class="skill-card">Java</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Projects</h2>
-      <p>Here are some of my sample works and contributions. More coming soon!</p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Responsive animated portfolio using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card">
+          <h3>Coming Soon</h3>
+          <p>More cool projects on the way!</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="certificates" class="section">
+  <section id="certificates" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Certificates</h2>
-      <p>My certifications and recognitions for training and achievements.</p>
+      <div class="slider">
+        <img src="pics/Certificate Amalla.png" alt="Certificate 1">
+        <img src="pics/Amalla.png" alt="Certificate 2">
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section" data-aos="fade-up">
     <div class="container">
-      <h2>Contact Me</h2>
-      <form action="https://formsubmit.co/rustyamalla@gmail.com" method="POST" class="contact-form">
+      <h2>Contact</h2>
+      <form action="https://formsubmit.co/ellorustyamalla13@gmail.com" method="POST" class="contact-form">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit">Send</button>
       </form>
       <div class="socials">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="mailto:rustyamalla@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.facebook.com/RustyO.Amalla" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:ellorustyamalla13@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.instagram.com/kidorasty__u/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@icetubes3" target="_blank"><i class="fab fa-tiktok"></i></a>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      &copy; 2025 Rusty O. Amalla. All rights reserved.
+      &copy; Portfolio Website by Rusty O. Amalla • 2025
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    AOS.init({ duration: 1000 });
+
     const hamburger = document.getElementById('hamburger');
     const nav = document.getElementById('nav');
     hamburger.addEventListener('click', () => {
       nav.classList.toggle('open');
+    });
+
+    document.querySelector('.theme-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
     });
   </script>
 </body>
