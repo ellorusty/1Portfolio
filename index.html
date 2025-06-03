@@ -24,6 +24,23 @@
       </nav>
       <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
       <div class="theme-toggle"><i class="fas fa-moon"></i></div>
+      <script>
+  const toggleBtn = document.querySelector('.theme-toggle');
+  const icon = toggleBtn.querySelector('i');
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    // Change icon
+    if (document.body.classList.contains('dark-mode')) {
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    } else {
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+    }
+  });
+</script>
     </div>
   </header>
 
